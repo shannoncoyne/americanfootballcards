@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB6DADB31BCD848E00D9DCF3 /* NFLTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6DADB21BCD848E00D9DCF3 /* NFLTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		FBB49CA01BC1C7AF004745F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB49C9F1BC1C7AF004745F7 /* AppDelegate.swift */; };
 		FBB49CA51BC1C7AF004745F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBB49CA31BC1C7AF004745F7 /* Main.storyboard */; };
 		FBB49CA71BC1C7AF004745F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBB49CA61BC1C7AF004745F7 /* Assets.xcassets */; };
 		FBB49CAA1BC1C7AF004745F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBB49CA81BC1C7AF004745F7 /* LaunchScreen.storyboard */; };
 		FBB49CB51BC1C7AF004745F7 /* AmericanFootballCardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB49CB41BC1C7AF004745F7 /* AmericanFootballCardsTests.swift */; };
 		FBB49CC01BC1C7AF004745F7 /* AmericanFootballCardsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB49CBF1BC1C7AF004745F7 /* AmericanFootballCardsUITests.swift */; };
-		FBB49CCE1BC1C880004745F7 /* NFLTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB49CCD1BC1C880004745F7 /* NFLTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		FBB49CD01BC1C95E004745F7 /* DivisionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB49CCF1BC1C95E004745F7 /* DivisionModel.swift */; settings = {ASSET_TAGS = (); }; };
 		FBB49CD61BC1DD5D004745F7 /* TeamTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB49CD51BC1DD5D004745F7 /* TeamTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		FBB49CD81BC1E04A004745F7 /* TeamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB49CD71BC1E04A004745F7 /* TeamModel.swift */; settings = {ASSET_TAGS = (); }; };
@@ -40,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB6DADB21BCD848E00D9DCF3 /* NFLTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFLTableViewController.swift; sourceTree = "<group>"; };
 		FBB49C9C1BC1C7AF004745F7 /* AmericanFootballCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmericanFootballCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBB49C9F1BC1C7AF004745F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBB49CA41BC1C7AF004745F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -52,7 +53,6 @@
 		FBB49CBB1BC1C7AF004745F7 /* AmericanFootballCardsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmericanFootballCardsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBB49CBF1BC1C7AF004745F7 /* AmericanFootballCardsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmericanFootballCardsUITests.swift; sourceTree = "<group>"; };
 		FBB49CC11BC1C7AF004745F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FBB49CCD1BC1C880004745F7 /* NFLTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NFLTableViewController.swift; path = ../NFLTableViewController.swift; sourceTree = "<group>"; };
 		FBB49CCF1BC1C95E004745F7 /* DivisionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DivisionModel.swift; sourceTree = "<group>"; };
 		FBB49CD51BC1DD5D004745F7 /* TeamTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamTableViewController.swift; sourceTree = "<group>"; };
 		FBB49CD71BC1E04A004745F7 /* TeamModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamModel.swift; sourceTree = "<group>"; };
@@ -152,7 +152,7 @@
 		FBB49CE01BC2B934004745F7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				FBB49CCD1BC1C880004745F7 /* NFLTableViewController.swift */,
+				FB6DADB21BCD848E00D9DCF3 /* NFLTableViewController.swift */,
 				FBB49CD51BC1DD5D004745F7 /* TeamTableViewController.swift */,
 			);
 			name = Controllers;
@@ -301,9 +301,9 @@
 				FBB49CDE1BC2B89B004745F7 /* GameModel.swift in Sources */,
 				FBB49CDA1BC22FD4004745F7 /* NFLTableViewCell.swift in Sources */,
 				FBB49CD81BC1E04A004745F7 /* TeamModel.swift in Sources */,
+				FB6DADB31BCD848E00D9DCF3 /* NFLTableViewController.swift in Sources */,
 				FBB49CDC1BC2B2F1004745F7 /* TeamTableViewCell.swift in Sources */,
 				FBB49CD01BC1C95E004745F7 /* DivisionModel.swift in Sources */,
-				FBB49CCE1BC1C880004745F7 /* NFLTableViewController.swift in Sources */,
 				FBB49CA01BC1C7AF004745F7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

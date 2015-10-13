@@ -1,25 +1,207 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="jqe-fk-bLg">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--NFL Teams-->
+        <scene sceneID="wdA-Sd-76E">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <tableViewController title="NFL Teams" id="sRr-mz-X3P" customClass="NFLTableViewController" customModule="AmericanFootballCards" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="Avh-Be-WtR">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuse identifier" id="gGH-Ic-GTT" customClass="NFLTableViewCell" customModule="AmericanFootballCards" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="90"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gGH-Ic-GTT" id="tz2-a2-PnR">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="89.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView opaque="NO" userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Patriots" translatesAutoresizingMaskIntoConstraints="NO" id="7fW-rs-piU">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="90"/>
+                                            <animations/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ezp-8Z-Org">
+                                            <rect key="frame" x="8" y="28" width="584" height="33"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <animations/>
+                                    <constraints>
+                                        <constraint firstItem="7fW-rs-piU" firstAttribute="leading" secondItem="tz2-a2-PnR" secondAttribute="leadingMargin" constant="-8" id="N8x-rn-wdU"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="7fW-rs-piU" secondAttribute="trailing" constant="-8" id="OLY-Jc-g7g"/>
+                                        <constraint firstItem="7fW-rs-piU" firstAttribute="leading" secondItem="tz2-a2-PnR" secondAttribute="leadingMargin" constant="-8" id="luD-wC-BMK"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="N8x-rn-wdU"/>
+                                            <exclude reference="OLY-Jc-g7g"/>
+                                            <exclude reference="luD-wC-BMK"/>
+                                        </mask>
+                                    </variation>
+                                </tableViewCellContentView>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstItem="7fW-rs-piU" firstAttribute="leading" secondItem="gGH-Ic-GTT" secondAttribute="leading" id="2ea-L2-qR7"/>
+                                    <constraint firstAttribute="bottom" secondItem="7fW-rs-piU" secondAttribute="bottom" id="5gR-ju-x7X"/>
+                                    <constraint firstAttribute="trailing" secondItem="7fW-rs-piU" secondAttribute="trailing" id="g6T-hi-yOH"/>
+                                    <constraint firstItem="7fW-rs-piU" firstAttribute="top" secondItem="gGH-Ic-GTT" secondAttribute="top" id="kXI-kT-msd"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="teamLogo" destination="7fW-rs-piU" id="EXA-cW-LLM"/>
+                                    <outlet property="teamNameLabel" destination="Ezp-8Z-Org" id="BWI-kl-b4q"/>
+                                    <segue destination="z3f-Dx-tm7" kind="show" identifier="show team" id="kaM-dM-49g"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="sRr-mz-X3P" id="yEr-Xw-38V"/>
+                            <outlet property="delegate" destination="sRr-mz-X3P" id="0vO-RH-c58"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="NFL Teams" id="og3-e8-BVh"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kpn-cw-dFU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="409" y="309"/>
+        </scene>
+        <!--Team Table View Controller-->
+        <scene sceneID="0Q1-tv-C7u">
+            <objects>
+                <tableViewController id="z3f-Dx-tm7" customClass="TeamTableViewController" customModule="AmericanFootballCards" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="QxC-CY-UIU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="teamReuseIdentifier" id="yzz-aJ-nYD" customClass="TeamTableViewCell" customModule="AmericanFootballCards" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="90"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yzz-aJ-nYD" id="PEg-wK-6Hn">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="90"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView opaque="NO" userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Patriots" translatesAutoresizingMaskIntoConstraints="NO" id="tAP-VB-ldH">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="90"/>
+                                            <animations/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Network" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YPi-2c-eKV">
+                                            <rect key="frame" x="229" y="53" width="71" height="28"/>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="71" id="jXO-PU-Hy8"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team1 @ Team2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iYn-Og-QXU">
+                                            <rect key="frame" x="8" y="8" width="584" height="37"/>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="iYn-Og-QXU" secondAttribute="height" multiplier="584:37" id="SXN-Tp-AxH"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HU4-hE-SHe">
+                                            <rect key="frame" x="8" y="53" width="213" height="28"/>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="213" id="Flu-uK-3Cj"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stadium" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cqu-Bl-csP">
+                                            <rect key="frame" x="308" y="53" width="284" height="28"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <animations/>
+                                    <constraints>
+                                        <constraint firstItem="Cqu-Bl-csP" firstAttribute="baseline" secondItem="YPi-2c-eKV" secondAttribute="baseline" id="CZ9-jY-hrU"/>
+                                        <constraint firstItem="iYn-Og-QXU" firstAttribute="leading" secondItem="PEg-wK-6Hn" secondAttribute="leadingMargin" id="Hwm-22-j19"/>
+                                        <constraint firstItem="Cqu-Bl-csP" firstAttribute="firstBaseline" secondItem="YPi-2c-eKV" secondAttribute="firstBaseline" id="PIX-fO-aTx"/>
+                                        <constraint firstItem="HU4-hE-SHe" firstAttribute="top" secondItem="iYn-Og-QXU" secondAttribute="bottom" constant="8" symbolic="YES" id="PaW-ux-RoI"/>
+                                        <constraint firstItem="YPi-2c-eKV" firstAttribute="firstBaseline" secondItem="HU4-hE-SHe" secondAttribute="firstBaseline" id="Ptc-pA-UUa"/>
+                                        <constraint firstItem="Cqu-Bl-csP" firstAttribute="trailing" secondItem="iYn-Og-QXU" secondAttribute="trailing" id="Qco-ue-UJX"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="HU4-hE-SHe" secondAttribute="bottom" constant="0.5" id="TSV-m5-BGU"/>
+                                        <constraint firstItem="YPi-2c-eKV" firstAttribute="baseline" secondItem="HU4-hE-SHe" secondAttribute="baseline" id="bWe-Rh-cKo"/>
+                                        <constraint firstItem="HU4-hE-SHe" firstAttribute="leading" secondItem="iYn-Og-QXU" secondAttribute="leading" id="oa8-ys-TFe"/>
+                                        <constraint firstItem="YPi-2c-eKV" firstAttribute="leading" secondItem="HU4-hE-SHe" secondAttribute="trailing" constant="8" symbolic="YES" id="rPV-eA-PbC"/>
+                                        <constraint firstItem="Cqu-Bl-csP" firstAttribute="leading" secondItem="YPi-2c-eKV" secondAttribute="trailing" constant="8" symbolic="YES" id="vnB-83-bQp"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="Hwm-22-j19"/>
+                                        </mask>
+                                    </variation>
+                                </tableViewCellContentView>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstItem="tAP-VB-ldH" firstAttribute="top" secondItem="yzz-aJ-nYD" secondAttribute="top" id="MJQ-eY-zAX"/>
+                                    <constraint firstAttribute="trailing" secondItem="iYn-Og-QXU" secondAttribute="trailing" constant="8" id="QLt-PV-TLf"/>
+                                    <constraint firstAttribute="trailing" secondItem="tAP-VB-ldH" secondAttribute="trailing" id="RaN-Qf-SH6"/>
+                                    <constraint firstItem="tAP-VB-ldH" firstAttribute="leading" secondItem="yzz-aJ-nYD" secondAttribute="leading" id="fAy-ug-ibf"/>
+                                    <constraint firstAttribute="bottom" secondItem="tAP-VB-ldH" secondAttribute="bottom" constant="0.5" id="h8S-jW-fSF"/>
+                                    <constraint firstItem="iYn-Og-QXU" firstAttribute="top" secondItem="yzz-aJ-nYD" secondAttribute="top" constant="8" id="o8U-pk-5G9"/>
+                                    <constraint firstItem="iYn-Og-QXU" firstAttribute="leading" secondItem="yzz-aJ-nYD" secondAttribute="leading" constant="8" id="t99-v2-Ujn"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="competitorLogo" destination="tAP-VB-ldH" id="9qr-ag-6J3"/>
+                                    <outlet property="dateLabel" destination="HU4-hE-SHe" id="LaK-qh-U66"/>
+                                    <outlet property="networkLabel" destination="YPi-2c-eKV" id="ocW-aS-aO1"/>
+                                    <outlet property="stadiumLabel" destination="Cqu-Bl-csP" id="BAS-NY-14f"/>
+                                    <outlet property="teamsLabel" destination="iYn-Og-QXU" id="phn-2R-RZi"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="z3f-Dx-tm7" id="GD8-qi-Un9"/>
+                            <outlet property="delegate" destination="z3f-Dx-tm7" id="rh8-Zy-Uxz"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HVR-yL-SBh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1083" y="309"/>
+        </scene>
+        <!--NFL Team-->
+        <scene sceneID="GmI-yl-vRk">
+            <objects>
+                <navigationController title="NFL Team" id="jqe-fk-bLg" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="o4q-ne-rjR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="sRr-mz-X3P" kind="relationship" relationship="rootViewController" id="Sdn-s6-0gm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NRJ-fa-YjD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-390" y="309"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Patriots" width="250" height="117"/>
+    </resources>
 </document>
